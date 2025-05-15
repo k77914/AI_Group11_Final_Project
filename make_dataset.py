@@ -228,7 +228,7 @@ values_over_720 = counts[counts >= 720].index
 filtered_df = total[total["street"].isin(values_over_720)]
 
 # 移除特定日期的資料
-filtered_df = filtered_df[~filtered_df["Date"].isin(["2017-01-28", "2017-09-06", "2017-09-07", "2017-09-08"])]
+filtered_df = filtered_df[~filtered_df["Date"].isin(["2017-01-28", "2017-09-06", "2017-09-07", "2017-09-08", "2022-03-03"])]
 
 # --- 儲存成 CSV ---
 filtered_df.to_csv("total_dataset_final.csv", index=False)
